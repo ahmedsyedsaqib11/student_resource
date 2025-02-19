@@ -115,7 +115,14 @@
 
     <main class="content">
         <h1>Mathematics - 8th Grade</h1>
-        <div class="topic"><a href="#">Chapter 1: Rational Numbers</a></div>
+         <div id="chapter1" class="topic-content">
+            <h3>Summary</h3>
+            <p>Rational numbers are numbers that can be expressed as a fraction of two integers. They include integers, fractions, and terminating or repeating decimals.</p>
+            <h3>Video Link</h3>
+            <p><a href="https://www.youtube.com/watch?v=example1" target="_blank">Watch Video on Rational Numbers</a></p>
+            <h3>Exercises</h3>
+            <p><a href="#">Practice Exercises on Rational Numbers</a></p>
+        </div>
         <div class="topic"><a href="#">Chapter 2: Linear Equations in One Variable</a></div>
         <div class="topic"><a href="#">Chapter 3: Understanding Quadrilaterals</a></div>
         <div class="topic"><a href="#">Chapter 4: Practical Geometry</a></div>
@@ -136,5 +143,15 @@
     <footer>
         <p>&copy; 2025 Narayana School. All rights reserved.</p>
     </footer>
+<script>
+        // JavaScript to toggle topic content visibility
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </body>
-</html>
