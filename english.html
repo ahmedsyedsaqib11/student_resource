@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English - 8th Grade</title>
+    <title>Mathematics - 8th Grade</title>
     <style>
         /* General Reset and Font Settings */
         * {
@@ -69,6 +69,7 @@
             border-radius: 5px;
             background-color: #f9f9f9;
             transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer; /* Add cursor pointer for better UX */
         }
 
         .topic:hover {
@@ -76,10 +77,13 @@
             transform: scale(1.03);
         }
 
-        .topic a {
-            text-decoration: none;
-            color: #333;
-            display: block;
+        .topic-content {
+            display: none; /* Hide content by default */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
         }
 
         /* Footer Styling */
@@ -101,6 +105,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
