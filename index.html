@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8th Grade Subjects</title>
     <style>
-        /* General Reset and Font Settings */
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -13,15 +13,15 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif; /* Smooth modern font */
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
             background: #f5f7fa;
             color: #333;
+            text-align: center;
         }
 
         /* Navbar Styling */
         .navbar {
-            background-color: #4e73df; /* Soft blue background */
+            background-color: #4e73df;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,73 +32,92 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            font-size: 0.9rem; /* Smaller font size for the navbar icons */
+            font-size: 1rem;
             margin: 0 15px;
-            padding: 8px 16px; /* Adjust padding for a more compact look */
-            border-radius: 30px;
+            padding: 8px 16px;
+            border-radius: 20px;
             transition: background-color 0.3s, transform 0.3s;
         }
 
         .navbar a:hover {
-            background-color: #375a86; /* Darker blue on hover */
+            background-color: #375a86;
             transform: scale(1.05);
         }
 
         /* Content Styling */
         .content {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 50px auto;
             padding: 30px;
             background-color: #fff;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            text-align: center;
         }
 
         .intro h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: #4e73df;
-            margin-bottom: 20px;
-            font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .intro p {
             font-size: 1.1rem;
             color: #555;
+            line-height: 1.6;
             margin-bottom: 20px;
-            line-height: 1.8;
         }
 
-        .intro p:last-child {
-            font-weight: 500;
+        /* Subject Sections */
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
 
-        /* Footer Styling */
+        .subject-card {
+            background: #4e73df;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s;
+        }
+
+        .subject-card:hover {
+            background-color: #375a86;
+            transform: scale(1.05);
+        }
+
+        .subject-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            font-weight: bold;
+        }
+
+        /* Footer */
         footer {
             background-color: #4e73df;
             color: white;
-            text-align: center;
             padding: 10px;
             font-size: 0.9rem;
             position: fixed;
             width: 100%;
             bottom: 0;
-            border-top: 1px solid #e1e1e1;
-        }
-
-        /* Smooth scrolling behavior */
-        html {
-            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="navbar">
             <a href="index.html">Home</a>
-            <a href="./math.html">Math</a>
-            <a href="./science.html">Science</a>
-            <a href="./social.html">Social Studies</a>
+            <a href="math.html">Math</a>
+            <a href="science.html">Science</a>
+            <a href="social.html">Social Studies</a>
             <a href="english.html">English</a>
             <a href="hindi.html">Hindi</a>
         </div>
@@ -107,13 +126,35 @@
     <main class="content">
         <div class="intro">
             <h1>Welcome to the 8th Grade Subjects Page</h1>
-            <p>This website provides a comprehensive list of subjects and topics covered in the 8th grade. You can explore the syllabus and find links to detailed study resources for each subject.</p>
-            <p>Choose a subject from the navigation bar above to get started with the chapters.</p>
+            <p>Explore the subjects covered in your 8th-grade syllabus. Click on any subject below to access study materials, exercises, and important resources.</p>
+        </div>
+
+        <div class="subjects">
+            <div class="subject-card">
+                <a href="math.html">➗ Mathematics</a>
+            </div>
+
+            <div class="subject-card">
+                <a href="science.html">🔬 Science</a>
+            </div>
+
+            <div class="subject-card">
+                <a href="social.html">🌍 Social Studies</a>
+            </div>
+
+            <div class="subject-card">
+                <a href="english.html">📖 English</a>
+            </div>
+
+            <div class="subject-card">
+                <a href="hindi.html">📝 Hindi</a>
+            </div>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Narayana School. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
