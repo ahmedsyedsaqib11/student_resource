@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Studies - 8th Grade</title>
+    <title>Mathematics - 8th Grade</title>
     <style>
         /* General Reset and Font Settings */
         * {
@@ -69,6 +69,7 @@
             border-radius: 5px;
             background-color: #f9f9f9;
             transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer; /* Add cursor pointer for better UX */
         }
 
         .topic:hover {
@@ -76,10 +77,13 @@
             transform: scale(1.03);
         }
 
-        .topic a {
-            text-decoration: none;
-            color: #333;
-            display: block;
+        .topic-content {
+            display: none; /* Hide content by default */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
         }
 
         /* Footer Styling */
@@ -101,38 +105,336 @@
         }
     </style>
 </head>
+
+</html>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="math.html">Math</a>
-        <a href="science.html">Science</a>
-        <a href="social.html">Social Studies</a>
-        <a href="english.html">English</a>
-        <a href="hindi.html">Hindi</a>
-    </div>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="math.html">Math</a>
+            <a href="science.html">Science</a>
+            <a href="social.html">Social Studies</a>
+            <a href="english.html">English</a>
+            <a href="hindi.html">Hindi</a>
+        </div>
+    </header>
 
     <main class="content">
-        <h1>Social Studies - 8th Grade</h1>
-        <div class="topic"><a href="#">Our Pasts: Where, When, How</a></div>
-        <div class="topic"><a href="#">The Establishment of Company Power</a></div>
-        <div class="topic"><a href="#">The Revolt of 1857-58</a></div>
-        <div class="topic"><a href="#">Education and British Rule</a></div>
-        <div class="topic"><a href="#">Women and Reform</a></div>
-        <div class="topic"><a href="#">Challenging the Caste System</a></div>
-        <div class="topic"><a href="#">ruling the countryside</a></div>
-        <div class="topic"><a href="#">India after Independence</a></div>
-        <div class="topic"><a href="#">The Constitution</a></div>
-        <div class="topic"><a href="#">Parliamentary Government</a></div>
-        <div class="topic"><a href="#">The Judiciary</a></div>
-        <div class="topic"><a href="#">Resources</a></div>
-        <div class="topic"><a href="#">Natural Resources</a></div>
-        <div class="topic"><a href="#">Agriculture</a></div>
-        <div class="topic"><a href="#">Industries</a></div>
-        <div class="topic"><a href="#">Human Resources</a></div>
+        <h1>Mathematics - 8th Grade</h1>
+        <!-- Chapter 1 -->
+        <div class="topic" onclick="toggleContent('chapter1')">
+            Chapter 1: How, When, and Where
+        </div>
+        <div id="chapter1" class="topic-content">
+            <h3>Summary</h3>
+            <p>The British perspective on education in India evolved from an initial interest in Orientalism, where officials like William Jones and Henry Thomas Colebrooke sought to promote ancient Indian texts, to a focus on practical Western learning. Critics like Thomas Babington Macaulay argued that English education was essential for civilizing India and emphasized the need for practical knowledge over traditional learning. The English Education Act of 1835 established English as the medium of instruction for higher education, reflecting a shift towards a system that prioritized Western knowledge and commerce.</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <p><ul>
+               <li><a href="https://youtu.be/YylNPCICLCA" target="_blank">Watch Video on How, When, and Where</a></li>
+               <li><a href="https://www.youtube.com/watch?v=DVTejKyZAeQ" target="_blank">Watch Video on How, When, and Where</a></li> 
+               <li><a href="https://www.youtube.com/watch?v=SQ11-V6Nl5w" target="_blank">Watch Video on How, When, and Where</a></li>
+            </ul>
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://ind.stthomasghaziabad.org/userfiles/worksheets/class8/8histoct.pdf"Practice Exercises on Rational Numbers</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="topic" onclick="toggleContent('chapter2')">
+            Chapter 2: Trade to territory
+        </div>
+        <div id="chapter2" class="topic-content">
+            <h3>Summary</h3>
+            <p>The decline of the Mughal Empire after Aurangzeb's death in 1707 allowed regional powers to emerge, while the East India Company, established in 1600, began to assert its influence in India. Initially focused on trade, the Company faced competition from other European powers and established its first factory in Bengal in 1651. Tensions escalated with the Nawabs of Bengal, culminating in the pivotal Battle of Plassey in 1757, where the Company, led by Robert Clive, defeated Nawab Sirajuddaulah. This victory marked the beginning of the Company's territorial expansion, as it became the Diwan of Bengal in 1765, allowing it to control vast revenue resources.</p>
+            <p>The East India Company employed a mix of military force, political manipulation, and economic pressure to annex Indian states, utilizing strategies like the Subsidiary Alliance and the Doctrine of Lapse under Lord Dalhousie. Key conflicts, including the wars against Mysore and the Marathas, further solidified British dominance. Administrative reforms established a structured governance system with Presidencies and a new judicial framework, while the creation of the sepoy army marked a shift in military organization. By 1857, the Company had transformed from a trading entity into a territorial power, controlling 63% of India's territory and 78% of its population.</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <p><ul>
+            <li><a href="https://www.youtube.com/watch?v=K8Lp5-09p3M">Video on Trade to Territory</a></li>
+            <li><a href="https://youtu.be/AMhocQ2WS4Q" target="_blank">Video on Linear Equations</a></li>
+            <li><a href="https://www.youtube.com/watch?v=WyvDKdhnzCA" target="_blank">Video on Linear Equations</a></li>
+            </ul></p>
+            <br></br> 
+            <h3>Exercises</h3>
+            <p><a href="https://www.studiestoday.com/printable-worksheet-history-cbse-class-8-history-trade-territory-1-216772.html#google_vignette">Practice Exercises on Linear Equations</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 3 -->
+        
+        <div class="topic" onclick="toggleContent('chapter3')">
+            Chapter 3: Ruling the countryside
+        </div>
+        <div id="chapter3" class="topic-content">
+            <h3>Summary</h3>
+            <p>In 1765, the East India Company became the Diwan of Bengal, gaining control over land administration and revenue collection. The Company aimed to maximize revenue by purchasing goods like cotton and silk cheaply, but the system had its drawbacks. The Permanent Settlement of 1793, which fixed revenue demands permanently, led to problems, as zamindars, burdened with high fixed costs, didn’t invest in land improvements, causing widespread poverty among peasants. This led to the introduction of the Mahalwari settlement and the Ryotwari system, but high taxes and poor agricultural conditions continued to harm peasants.</p>
+            <p>The Company also focused on cultivating crops like indigo for European markets. Indigo cultivation under the Nij and Ryoti systems exploited peasants, forcing them into debt cycles. This led to the Indigo Rebellion in Bengal, where peasants protested against oppressive conditions, supported by local zamindars. The rebellion led to an investigation by the British government, and by 1917, Mahatma Gandhi’s Champaran movement further highlighted the plight of indigo cultivators, marking a significant turning point in India’s struggle against colonial exploitation..
+            </p>
+            <br></br>
+            <h3>Video Link</h3>
+            <p><ul>
+            <li><a href="https://www.youtube.com/watch?v=uqBRP6ctYH4" target="_blank">Watch Video on Ruling The Countryside</a></li>
+            <li><a href="https://www.youtube.com/watch?v=msIpRyr1u0E" target="_blank">Watch Video on Understanding Quadrilaterals</a></li>
+            <li><a href="https://youtu.be/2s70Qd0ap5o">Watch Video on Understanding Quadrilaterals</a></li>    
+            <li><a href="https://byjus.com/ncert-solutions-class-8-maths/chapter-3-understanding-quadrilaterals/ ">Article on Understanding Quadrilaterals</a></li>
+            </ul></p>
+            <br></br>   
+            <h3>Exercises</h3>
+            <p><a href="https://byjus.com/maths/important-questions-class-8-maths-chapter-3-understanding-quadrilaterals/">Practice Exercises on Understanding Quadrilaterals</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="topic" onclick="toggleContent('chapter4')">
+            Chapter 4: Data Handling
+        </div>
+        <div id="chapter4" class="topic-content">
+            <h3>Summary</h3>
+            <p>What is Data handling? Data handling is referred to the procedure done to organize the information provided in order to perform mathematical operations on them. It means collecting the raw data and presenting them in a particular form. This data can be in any form like in numbers, in words, etc. </p>
+            <p>There are usually two types of data, they are:</p>
+            <ul>
+            <li>Qualitative Data</li>
+            <li>Quantitative data</li>
+            </ul>
+            <br></br>
+            <h3>Video Link</h3>
+            <ul>
+            <li><a href="https://www.youtube.com/watch?v=l2RUYEZxAIs&t=5s" target="_blank">Watch Video on Data Handling</a></li>
+            <li><a href="https://www.youtube.com/watch?v=bh7S4u23sAw" target="_blank">Watch Video on Data Handling</a></li>
+            <li><a href="https://www.youtube.com/watch?v=6RwHsr6xcyc" target="_blank">Watch Video on Data Handling</a></li>
+            <li><a href="https://byjus.com/maths/data-handling/ " target="_blank">Article on Data Handling</a></li>
+            </ul>
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://www.learncbse.in/data-handling-ncert-extra-questions-for-class-8-maths/ ">Practice Exercises on Data Handling</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 5 -->
+        <div class="topic" onclick="toggleContent('chapter5')">
+            Chapter 5: Square and Square Roots
+        </div>
+        <div id="chapter5" class="topic-content">
+            <h3>Summary</h3>
+            <p>If a natural number m can be expressed as n2, where n is also a natural number, then m is a square number. Example: 1, 4, 9, 16 and 25.</p>
+            <p>If n is a number, then its square is given as n×n=n2. For example: Square of 5 is equal to  5×5=25</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <ul>
+                <li><a href="https://youtu.be/oYaR9wyLiWs" target="_blank">Watch Video on Square and Square Roots</a></li>
+                <li><a href="https://youtu.be/t0ICtojeJ6w" target="_blank">Watch Video on Square and Square Roots</a></li>
+                <li><a href="https://youtu.be/q6zOuTA3fw8" target="_blank">Watch Video on Square and Square Roots</a></li>
+                <li><a href="https://byjus.com/cbse-notes/cbse-class-8-maths-notes-chapter-6-squares-and-square-roots/" target="_blank">Article Square and Square Roots</a></li>
+            </ul>           
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://www.scribd.com/document/523620238/CBSE-Class-8-Mathematics-Worksheet-Square-and-Square-Roots-2">Practice Exercises on  Square and Square Roots</a></p>
+             <br></br>
+        </div>
+
+        <!-- Chapter 6 -->
+        <div class="topic" onclick="toggleContent('chapter6')">
+            Chapter 6: Cube and Cube Roots
+        </div>
+        <div id="chapter6" class="topic-content">
+            <h3>Summary</h3>
+            <p>If a natural number m can be expressed as n3, where n is also a natural number, then m is called the cube number of n. </p>
+            <p>Numbers like 1, 8, 27  are cube number of the numbers 1, 2, and 3 respectively.</p>
+            <p>All perfect cube numbers are obtained by multiplying a number by itself three times.</p>
+            <br></br>
+            <h3>Video Link</h3>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=23sMwHTFbh4" target="_blank">Watch Video on Cube and Cube Roots</a></li>
+                <li><a href="https://youtu.be/t0ICtojeJ6w" target="_blank">Watch Video on Cube and Cube Roots</a></li>
+                <li><a href="https://youtu.be/t2NygB5vPHg" target="_blank">Watch Video on Cube and Cube Roots</a></li>
+                <li><a href="https://byjus.com/cbse-notes/cbse-class-8-maths-notes-chapter-7-cubes-and-cube-roots/" target="_blank">Article on Cube and Cube Roots</a></li>
+            </ul>           
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://byjus.com/ncert-solutions-class-8-maths/chapter-7-cube-and-cube-roots/">Practice Exercises on Cube and Cube Roots</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 7 -->
+        <div class="topic" onclick="toggleContent('chapter7')">
+            Chapter 7:Comparing Quantities
+        </div>
+        <div id="chapter7" class="topic-content">
+            <h3>Summary</h3>
+            <p>In this chapter “Comparing quantities”, students of Class 8 will learn to find the Discount when discount percentage is given. Also, we will learn here cost price, sales tax, GST (Goods and Services Tax), along with compound interest.</p>
+           <br></br>
+            <h3>Video Link</h3>
+            <ul>
+                <li><a href="https://youtu.be/Iiy6K3uk-Qw" target="_blank">Watch Video on Comparing Quantities</a></li>
+                <li><a href="https://www.youtube.com/watch?v=6E_P_ZkwnT0" target="_blank">Watch Video on Comparing Quantities</a></li>
+                <li><a href="https://www.youtube.com/watch?v=V00JATEAGRU" target="_blank">Watch Video on Comparing Quantities</a></li>
+                <li><a href="https://byjus.com/ncert-solutions-class-8-maths/chapter-8-comparing-quantities/" target="_blank">Article on Comparing Quantities</a></li>
+            </ul>           
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://noida.cambridgeschool.edu.in/wp-content/uploads/sites/4/2019/08/COMPARING-QUANTITIES.pdf">Practice Exercises on Comparing Quantities</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 8 -->
+        <div class="topic" onclick="toggleContent('chapter8')">
+            Chapter 8: Algebraic Expressions and Identities
+        </div>
+        <div id="chapter8" class="topic-content">
+            <h3>Summary</h3>
+            <p>An algebraic expression is a combination of variables, constants, and coefficients linked by arithmetic operations like addition, subtraction, multiplication, or division.</p>
+            <p>It represents relationships between quantities using letters (variables) to stand for unknown values, constants as fixed numbers, and coefficients as numbers multiplying the variables.</p>
+            <p>For example, in the expression 5x−35x - 35x−3, xxx is the variable, 555 is the coefficient, and −3-3−3 is the constant. </p>
+            <p>Algebraic expressions can be monomial (one term), binomial (two terms), or polynomial (multiple terms). The goal is to simplify or manipulate these expressions to solve for unknown values or find relationships between quantities.</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <ul>
+                <li><a href="https://youtu.be/C46fQQeHgQE" target="_blank">Watch Video on Algebraic Expressions and Identities</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8PiAQN-Serc" target="_blank">Watch Video on Algebraic Expressions and Identities</a></li>
+                <li><a href="https://www.youtube.com/watch?v=TYPxguIDXUU" target="_blank">Watch Video on Algebraic Expressions and Identities</a></li>
+                <li><a href="https://byjus.com/maths/algebraic-expressions/" target="_blank">Article on Algebraic Expressions and Identities</a></li>
+            </ul>           
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://byjus.com/maths/important-questions-class-8-maths-chapter-9-algebraic-expressions-identities/">Practice Exercises on Algebraic Expressions and Identities</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 9 -->
+        <div class="topic" onclick="toggleContent('chapter9')">
+            Chapter 9:Mensuration
+        </div>
+        <div id="chapter9" class="topic-content">
+            <h3>Summary</h3>
+            <p>Mensuration is a field of mathematics that involves the measurement of different geometric shapes and their properties, such as length, volume, shape, surface area, and lateral surface area, etc. You can explore mensuration in more depth in basic Mathematics.</p>
+            <br></br>
+            <h3>Video Link</h3>
+             <ul>
+                <li><a href="https://www.youtube.com/watch?v=JVY5FOGQuOk" target="_blank">Watch Video on Mensuration</a></li>
+                <li><a href="https://www.youtube.com/watch?v=INb9TBldnZw" target="_blank">Watch Video on Mensuration</a></li>
+                <li><a href="https://byjus.com/maths/mensuration/" target="_blank">Article on Mensuration</a></li>
+            </ul>           
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://byjus.com/maths/important-questions-class-8-maths-chapter-11-mensuration/">Practice Exercises on Mensuration</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 10 -->
+        <div class="topic" onclick="toggleContent('chapter10')">
+            Chapter 10:Exponents and Powers
+        </div>
+        <div id="chapter10" class="topic-content">
+            <h3>Summary</h3>
+            <p>The power of a number indicates the number of times it must be multiplied. It is written in the form ab. Where ‘b’ indicates the number of times ‘a’ needs to be multiplied to get our result. Here ‘a’ is called the base and ‘b’ is called the exponent.</p>
+            <p>For example: Consider 9³. Here the exponent ‘3’ indicates that base ‘9’ needs to be multiplied three times to get our equivalent answer which is 729.</p>
+            <br></br>
+            <h3>Video Link</h3>
+             <ul>
+                <li><a href="https://youtu.be/vLSkRi5_HKQ" target="_blank">Watch Video on Exponents and Powers</a></li>
+                <li><a href="https://youtu.be/EjpIG3hrz1E" target="_blank">Watch Video on Exponents and Powers</a></li>
+                <li><a href="https://www.youtube.com/watch?v=b6lRQzyzEEI" target="_blank">Watch Video on Exponents and Powers</a></li>
+                <li><a href="https://byjus.com/maths/exponents-powers/" target="_blank">Article on Exponents and Powers</a></li>
+            </ul>           
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://opjsrgh.in/Content/Worksheet/PRACTICE-WS/2022-2023/day18/8-Mathematics.pdf">Practice Exercises on Exponents and Powers</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 11 -->
+        <div class="topic" onclick="toggleContent('chapter11')">
+            Chapter 11:Direct and Inverse Proportions
+        </div>
+        <div id="chapter11" class="topic-content">
+            <h3>Summary</h3>
+            <h4>Inverse</h4>
+            <p>If the value of variable x decreases or increases upon corresponding increase or decrease in the value of variable y, then we can say that variables x and y are in inverse proportion.</p>
+            <p>For example : In the table below, we have variable y: Time taken (in minutes) reducing proportionally to the increase in value of variable x: Speed (in km/hour). Hence the two variables are in inverse proportion.</p>
+            <br></br>
+            <h4>Direct Proportion</h4>
+            <p>If the value of a variable x always increases or decreases with the respective increase or decrease in value of variable y, then it is said that the variables x and y are in direct proportion.</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <ul>
+                <li><a href="https://youtu.be/o1itP4DDkSc" target="_blank">Watch Video on Direct and Inverse Proportions</a></li>
+                <li><a href="https://youtu.be/scIQbwss7Cc" target="_blank">Watch Video on Direct and Inverse Proportions</a></li>
+                <li><a href="https://byjus.com/ncert-solutions-class-8-maths/chapter-13-direct-inverse-proportions/" target="_blank">Article on Direct and Inverse Proportions</a></li>
+            </ul>           
+            <br></br>            
+           <h3>Exercises</h3>
+            <p><a href="https://byjus.com/ncert-solutions-class-8-maths/chapter-13-direct-inverse-proportions/">Practice Exercises on Direct and Inverse Proportions</a></p>
+            <br></br>
+        </div>
+        
+        <!-- Chapter 12 -->
+        <div class="topic" onclick="toggleContent('chapter12')">
+            Chapter 12:Factorization
+        </div>
+        <div id="chapter12" class="topic-content">
+            <h3>Summary</h3>
+            <p>An expression can be factorised into the product of its factors. These factors can be algebraic expressions, variables and numbers also.To know more about Factors, visit <a href="https://byjus.com/maths/factors-of-a-number/" target="_blank">here</a>.</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <ul>
+                <li><a href="https://youtu.be/mRKpUaG6Te8" target="_blank">Watch Video on Factorization</a></li>
+                <li><a href="https://youtu.be/C46fQQeHgQE" target="_blank">Watch Video on Factorization</a></li>
+                <li><a href="https://youtu.be/g_7WVf6OhKU" target="_blank">Watch Video on Factorization</a></li>                              
+            </ul>           
+            <br></br>  
+            <h3>Exercises</h3>
+            <p><a href="https://noida.cambridgeschool.edu.in/wp-content/uploads/sites/4/2020/02/Class8STAssignment.pdf">Practice Exercises on Factorization</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 13 -->
+        <div class="topic" onclick="toggleContent('chapter13')">
+            Chapter 13: Introduction to Graphs
+        </div>
+        <div id="chapter13" class="topic-content">
+            <h3>Summary</h3>
+            <p>Graphical methods used to present data are very efficient in organizing the data and understanding them. There are various graphical methods which are mentioned below:</p>
+            <ul>
+                <li>While comparing among categories, the method which is appropriate is the bar graph.</li>
+                <li>While comparing parts of a whole, a pie chart is the ideal method.</li>
+                <li>When data is provided in intervals, a histogram can be used for easier understanding.</li>
+                <li>In the case of the data changing continuously over a period of time, a line graph will be useful</li>
+                <li>When an unbroken line is represented, it is done with the help of a <a href="https://byjus.com/maths/linear-graph/linear graph" target="_blank">linear graph</a></li>
+            </ul>
+            <p>Graphs are visual representation of data collected. Its purpose is to show numerical data in physical form so that it can be understood quickly, easily and clearly.</p>
+            <br></br>
+            <h3>Video Link</h3>
+            <ul>
+                <li><a href="https://youtu.be/wJchMNEw5-4" target="_blank">Watch Video on Introduction to Graphs</a></li>
+                <li><a href="https://youtu.be/6RwHsr6xcyc" target="_blank">Watch Video on Introduction to Graphs</a></li>
+                <li><a href="https://youtu.be/4UQAD3xTSLk" target="_blank">Watch Video on Introduction to Graphs</a></li>
+                 <li><a href="Introduction to Graph Data Structure - GeeksforGeeks " target="_blank">Article on Introduction to Graphs</a></li>
+                
+            </ul>           
+            <br></br>  
+            <h3>Exercises</h3>
+            <p><a href="https://byjus.com/maths/important-questions-class-8-maths-chapter-15-introduction-to-graphs/">Practice Exercises on Introduction to Graphs</a></p>
+            <br></br>
+        </div>
+                
     </main>
 
     <footer>
         <p>&copy; 2025 Narayana School. All rights reserved.</p>
     </footer>
+
+<script>
+        // JavaScript to toggle topic content visibility
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
