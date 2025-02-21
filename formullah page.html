@@ -1,1 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics - 8th Grade</title>
+    <style>
+        /* General Reset and Font Settings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Poppins', sans-serif; /* Smooth modern font */
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #4e73df; /* Soft blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem; /* Smaller font size for the navbar icons */
+            margin: 0 15px;
+            padding: 8px 16px; /* Adjust padding for a more compact look */
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #375a86; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+
+        /* Content Styling */
+        .content {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #4e73df;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .topic {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer; /* Add cursor pointer for better UX */
+        }
+
+        .topic:hover {
+            background-color: #e1e7f1; /* Light blue hover effect */
+            transform: scale(1.03);
+        }
+
+        .topic-content {
+            display: none; /* Hide content by default */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #4e73df;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        /* Smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+</html>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="math.html">Math</a>
+            <a href="science.html">Science</a>
+            <a href="social.html">Social Studies</a>
+            <a href="english.html">English</a>
+            <a href="hindi.html">Hindi</a>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1>Mathematics - 8th Grade</h1>
+        <!-- Chapter 1 -->
+        <div class="topic" onclick="toggleContent('chapter1')">
+            Chapter 1: Rational Numbers
+        </div>
+        <div id="chapter1" class="topic-content">
+            <h3>Formulas</h3>
+            <ul>
+                <li>Additive identity:a+0=a</li>
+                <li>Multiplicative inverse:(a/b) x (b/a) = 1</li>
+                <li>Commutative Property of Addition:a+b = b+a</li>
+                <li>Commutative Property of Subtraction	a-b ≠ b-a</li>
+            </ul>
+            <br></br>
+            
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="topic" onclick="toggleContent('chapter2')">
+            Chapter 2: Linear Equations in One Variable
+        </div>
+        <div id="chapter2" class="topic-content">
+            <h3>Formulas</h3>
+            <p><ul>
+                <li>Distributive Property	x(y+z)=xy+xz</li>
+                <li>Commutative Property	x+y=y+x (Addition) x.y=y.x (Multiplication)</li>
+                <li>Associative Property	x+(y+z)=(x+y)+z (Addition) x.(y.z)=(x.y).z (Multiplication)</li>
+                <li>Identity Property	x+0=x (Additive) x.1=x (Multiplicative)</li>
+            </ul></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="topic" onclick="toggleContent('chapter3')">
+            Chapter 3: Understanding Quadrilaterals
+        </div>
+        <div id="chapter3" class="topic-content">
+            <h3>Formulas</h3>
+            <p><ul>
+            <li>Square	= p×p, p is side.</li>
+            <li>Rectangle	 = l×b</li>
+            <li>Rhombus	= 1/2(d1×d2), d1 and d2 are diagonals.</li>
+            <li>Parallelogram	= b×h, h is height, b is base</li>
+            <li>Trapezium	= [(a+b)h]2, a and b are parallel sides</li>
+            <li>Isosceles Trapezium	= [(a+b)h]2, a and b are parallel sides</li>
+            <li>Kite	d1×d2, d1, and d2 are diagonals.</li>
+            </ul></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="topic" onclick="toggleContent('chapter4')">
+            Chapter 4: Data Handling
+        </div>
+        <div id="chapter4" class="topic-content">
+            <h3>Formulas</h3>
+            <ul>
+            <li>Data: This encompasses a compilation of numerical values, constituting various forms of information.</li>
+            <li>Raw Data: The initial observations gathered form what is referred to as raw data, representing the fundamental building blocks of information.</li>
+            <li>Range: This denotes the distinction between the highest and lowest values within the assortment of data, encapsulating the span of values.</li>
+            <li>Statistics: The domain of statistics revolves around the tasks of assembling, illustrating, scrutinizing, and interpreting numerical data, facilitating the extraction of meaningful insights</li>
+            </ul>
+            <br></br>
+            <br></br>
+            <h3>Exercises</h3>
+            <p><a href="https://www.learncbse.in/data-handling-ncert-extra-questions-for-class-8-maths/ ">Practice Exercises on Data Handling</a></p>
+            <br></br>
+        </div>
+
+        <!-- Chapter 5 -->
+        <div class="topic" onclick="toggleContent('chapter5')">
+            Chapter 5: Square and Square Roots
+        </div>
+        <div id="chapter5" class="topic-content">
+            <h3>Formulas</h3>
+            <li>Product Rule: √(a * b) = √a * √b. Example: √(4 * 9) = √4 * √9 = 2 * 3 = 6.</li>
+            <li>Quotient Rule: √(a / b) = √a / √b. Example: √(16 / 4) = √16 / √4 = 4 / 2 = 2.</li>
+            <li>Power Rule: (√a)^n = √(a^n) Example: (√4)^2 = √(4^2) = √16 = 4.</li>
+            <li>Simplifying Expressions: √(a^2) = a. ...</li>
+            <li>Cube of a Number: (a)^3 = a * a * a. ...</li>
+            <li>Cube Root of a Number: ∛(a^3) = a.</li>
+            <br></br>
+        </div>
+
+        <!-- Chapter 6 -->
+        <div class="topic" onclick="toggleContent('chapter6')">
+            Chapter 6: Cube and Cube Roots
+        </div>
+        <div id="chapter6" class="topic-content">
+            <h3>Formulas</h3>
+            <li>The cube of every even number is even.</li>
+            <li>The cube of every odd number is odd.</li>
+            <li>Cubes of Negative Integers.</li>          
+            <br></br>
+        </div>
+
+        <!-- Chapter 7 -->
+        <div class="topic" onclick="toggleContent('chapter7')">
+            Chapter 7:Comparing Quantities
+        </div>
+        <div id="chapter7" class="topic-content">
+            <h3>Formulas</h3>
+            <li>Discount = Marked Price – Sale Price</li>
+            <li>Discount percentage = ( Discount/ Marked Price ) x 100</li>
+            <li>Overhead expenses are those additional expenses that are made after buying an article and are included in the cost price.</li>
+            <li>Cost Price = Buying price + Overhead expenses</li>
+            <li>Sales tax = Tax percentage of Bill Amount</li>
+            <li>Simple Interest = ( Principal x Rate x Time )/100</li>
+            <li>Compound Interest Formula = Amount - Principal</li>
+            <li>Amount = Principal ( 1 + Rate/100)</li>
+            <br></br>
+        </div>
+
+        <!-- Chapter 8 -->
+        <div class="topic" onclick="toggleContent('chapter8')">
+            Chapter 8: Algebraic Expressions and Identities
+        </div>
+        <div id="chapter8" class="topic-content">
+            <h3>Formulas</h3>
+         <p><ul> 
+          <li>(a + b)2 = a2 + 2ab + b2</li>
+          <li>(a - b)2 = a2 - 2ab + b2</li>
+          <li>(a + b)(a - b) = a2 - b2</li>
+          <li>(a + b)3 = a3 + 3a2b + 3ab2 + b3</li>
+          <li>(a - b)3 = a3 - 3a2b + 3ab2 - b3</li>
+          <li>a3 + b3 = (a + b)(a2 - ab + b2)</li>
+          <li>a3 - b3 = (a - b)(a2 + ab + b2)</li>
+          <li>(a + b + c)2 = a2 + b2 + c2 + 2ab + 2bc + 2ca.</li>
+          <br></br>
+         </p></ul>
+        </div>
+
+        <!-- Chapter 9 -->
+        <div class="topic" onclick="toggleContent('chapter9')">
+            Chapter 9:Mensuration
+        </div>
+        <div id="chapter9" class="topic-content">
+            <h3>Formulas(2D)</h3>
+             <ul>
+                <li>Square= Area=a2, Perimeter=4a</li>
+                <li>Rectangle= Area=lb, Perimeter=2(l+b)</li>
+                <li>Circle= Area= πr2, Perimeter= 2πr</li>
+                <li>Scalene triangel= Area=√[s(s−a)(s−b)(s−c)], Where, s = (a+b+c)/2, Perimeter=a+b+c</li>
+            </ul>           
+            <br></br>
+        </div>
+
+        <!-- Chapter 10 -->
+        <div class="topic" onclick="toggleContent('chapter10')">
+            Chapter 10:Exponents and Powers
+        </div>
+        <div id="chapter10" class="topic-content">
+            <h3>Formulas</h3>
+             <ul>
+                <li>Multiplication of Exponents: am × an = a. m+n</li>
+                <li>Division of Exponents: am ÷ an = a. m–n</li>
+                <li>Power of Power: (am)n = a. mn</li>
+                <li>Power of a Product: am × bm = (ab) m</li>
+                <li>Zero Power a0 = 1.</li>
+                <li>Power of a Quotient: am/ bm = (a/b) m</li>
+            </ul>           
+            <br></br>
+        </div>
+
+        <!-- Chapter 11 -->
+        <div class="topic" onclick="toggleContent('chapter11')">
+            Chapter 11:Direct and Inverse Proportions
+        </div>
+        <div id="chapter11" class="topic-content">
+            <h3>Formulas</h3>
+            <ul>
+                <li>If two variables x, y are inversely proportional, then x ∝ 1/y, that means xy = k (some constant)</li>
+                <li>If they are directly proportional, then x ∝ y that means x/y = k.</li>
+            </ul>           
+            
+        </div>
+        
+        <!-- Chapter 12 -->
+        <div class="topic" onclick="toggleContent('chapter12')">
+            Chapter 12:Factorization
+        </div>
+        <div id="chapter12" class="topic-content">
+            <h3>Formulas</h3>
+            <ul>
+                <li>a2 – b2 = (a – b)(a + b)</li>
+                <li>(a + b)2 = a2 + 2ab + b2</li>
+                <li>(a – b)2 = a2 – 2ab + b2</li>
+                <li>a3 – b3 = (a – b)(a2 + ab + b2)</li>
+                <li>a3 + b3 = (a + b)(a2 – ab + b2)</li>
+                <li>(a + b + c)2 = a2 + b2 + c2 + 2ab + 2bc + 2ca.</li>
+                <li>(a – b – c)2 = a2 + b2 + c2 – 2ab + 2bc – 2ca.</li>
+            </ul>           
+            <br></br>
+        </div>
+
+        <!-- Chapter 13 -->
+        <div class="topic" onclick="toggleContent('chapter13')">
+            Chapter 13: Introduction to Graphs
+        </div>
+        <div id="chapter13" class="topic-content">
+            <h3>Summary</h3>
+                <li>The x-coordinate of a point is its distance from y-axis.</li>
+                <li>The y-coordinate of a point is its distance from x-axis.</li>
+                <li>The coordinates of the origin are (0, 0).</li>
+                <li>The x-coordinate of every point on y-axis is zero.</li>
+                <li>The y-coordinate of every point on x-axis is zero.</li>
+            </ul>
+            <br></br>
+        </div>
+                
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Narayana School. All rights reserved.</p>
+    </footer>
+
+<script>
+        // JavaScript to toggle topic content visibility
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
